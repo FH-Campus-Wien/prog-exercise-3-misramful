@@ -101,7 +101,7 @@ public class App {
         Scanner scan = new Scanner(System.in);
 
         while (julian == false) {
-            System.out.print("Guess new number " + countedNumber + ":" );
+            System.out.print("Guess number " + countedNumber + ": " );
             guessedNumber = scan.nextInt();
 
             if (countedNumber >= 10) {
@@ -132,7 +132,7 @@ public class App {
         App exercise3 = new App();
 
         System.out.println("Task 1: One Month Calendar");
-        exercise3.oneMonthCalendar(31, 1);
+        exercise3.oneMonthCalendar(30, 6);
 
         System.out.println("Task 2: Linear Congruential Method");
         long [] array1 = exercise3.lcg(123);
