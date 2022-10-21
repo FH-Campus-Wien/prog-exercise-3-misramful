@@ -15,9 +15,9 @@ public class App {
         while (number <= days) {
             for (int i = 1; i <=7 ; i++) {
                 if (i < start && week == 1) {
-                    System.out.print(" ");
+                    System.out.print("   ");
                 }
-                else if ((i <= start || week > 1) && number <= days) {
+                else if ((i >= start || week > 1) && number <= days) {
                     System.out.print(String.format("%2s", number) + " "); //string.format method returns the formatted string by given locale, format and arguments
                     number = number + 1;
                 }
