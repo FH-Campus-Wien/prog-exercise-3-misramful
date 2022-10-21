@@ -95,7 +95,7 @@ public class App {
     }
     public static void guessingGame(int numberToGuess){
 
-        int countedNumber = 0;
+        int countedNumber = 1;
         int guessedNumber;
         boolean julian = false; //state of b
         Scanner scan = new Scanner(System.in);
@@ -104,7 +104,7 @@ public class App {
             System.out.print("Guess new number " + countedNumber + ":" );
             guessedNumber = scan.nextInt();
 
-            if (countedNumber >= 9) {
+            if (countedNumber >= 10) {
                 System.out.println("You lost! Have you ever heard of divide & conquer?");
                 return;
             }
@@ -144,10 +144,10 @@ public class App {
 
         System.out.println("Task 3: Guessing Game");
 
-        exercise3.guessingGame(10);
+        exercise3.guessingGame(exercise3.randomNumberBetweenOneAndHundred());
 
-        System.out.println("Task 4: Random Number");
-        System.out.println(exercise3.randomNumberBetweenOneAndHundred());
+        //System.out.println("Task 4: Random Number");
+        //System.out.println(exercise3.randomNumberBetweenOneAndHundred());
         /*
         System.out.println("Task 5: Notendurchschnitt");
         exercise3.marks();
