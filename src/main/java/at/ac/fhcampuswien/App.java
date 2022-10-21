@@ -18,7 +18,7 @@ public class App {
                     System.out.print(" ");
                 }
                 else if ((i <= start || week > 1) && number <= days) {
-                    System.out.print(String.format("%2", number) + " "); //string.format method returns the formatted string by given locale, format and arguments
+                    System.out.print(String.format("%2s", number) + " "); //string.format method returns the formatted string by given locale, format and arguments
                     number = number + 1;
                 }
 
@@ -76,7 +76,7 @@ public class App {
         long[] array = new long[10]; //array -> more than one value in one variable
         long longus; //long kann methode aufrufen integer nicht
         long m = (long) Math.pow(2, 31); //is used to calculate a number raise to the power of some other number. This function accepts two parameters and returns the value of first parameter raised to the second parameter.
-        int c = 12345; //MI integer no method needed?
+        long c = 12345; //MI integer no method needed?
         long a = 1103515245;
 
         for (int i = 0; i < array.length ; i++) {  //use command fori to create for loop; the array length is the number of elements that an array can hold; besser length, weil es sich anpasst?
@@ -130,12 +130,17 @@ public class App {
 
     public static void main(String[] args){
         App exercise3 = new App();
-/*
+
         System.out.println("Task 1: One Month Calendar");
-        exercise3.oneMonthCalendar(31, 1);*/
+        exercise3.oneMonthCalendar(31, 1);
 
         System.out.println("Task 2: Linear Congruential Method");
-        System.out.println(exercise3.lcg(123456789));
+        long [] array1 = exercise3.lcg(123);
+        //System.out.println(array1[1]);
+        for (int i = 0; i < array1.length; i++) {
+            System.out.print(array1[i]);
+        }
+        //System.out.println((exercise3.lcg(123)).toString());
 
         System.out.println("Task 3: Guessing Game");
 
